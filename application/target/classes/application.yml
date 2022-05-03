@@ -4,9 +4,12 @@ spring:
   datasource:
     password: tamar123
     username: postgres
-    url: jdbc:postgresql:localhost:5432/PHYTECH:P1
+    url: jdbc:postgresql:postgres://eefchjwymxlowj:793173c830b09253101eee32717272dfc2ddc75702e7c85884f09b882db4f98d@ec2-52-54-212-232.compute-1.amazonaws.com
     driver-class-name: org.postgresql.Driver
     driverClassName: org.postgresql.Driver
+    ssl:
+      enabled: true
+      key-store-type: org.postgresql.ssl.NonValidatingFactory
   application:
     name: phytech
   main:
