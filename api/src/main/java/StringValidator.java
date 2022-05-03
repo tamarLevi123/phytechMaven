@@ -1,10 +1,8 @@
 
 
 import java.util.*;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
-public class StringValidatior {
+public class StringValidator {
     private static final Collection<Character> OPEN_BRACES;
     private static final Collection<Character> CLOSE_BRACES;
     private static final Map<Character, Character> BRACES;
