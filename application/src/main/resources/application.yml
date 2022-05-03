@@ -1,0 +1,23 @@
+spring:
+  devtools:
+    add-properties: false
+  datasource:
+    password: tamar123
+    username: postgres
+    url: jdbc:postgresql:eefchjwymxlowj:793173c830b09253101eee32717272dfc2ddc75702e7c85884f09b882db4f98d@ec2-52-54-212-232.compute-1.amazonaws.com:5432/d83l1brh2pch1v
+    driver-class-name: org.postgresql.Driver
+    driverClassName: org.postgresql.Driver
+    ssl:
+      enabled: true
+      key-store-type: org.postgresql.ssl.NonValidatingFactory
+  application:
+    name: phytech
+  main:
+    web-application-type: none
+server:
+  connection-timeout: 30s
+  port: 9080
+  tomcat:
+    max-connections: 20000
+    keep-alive-timeout: 30s
+    max-keep-alive-requests: 100

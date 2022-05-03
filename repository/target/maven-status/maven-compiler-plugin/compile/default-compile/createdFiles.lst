@@ -1,0 +1,8 @@
+entity\ItemEntity$ItemEntityBuilder.class
+entity\StockEntity$StockEntityBuilder.class
+entity\ItemEntity.class
+repository\ItemRepository.class
+repository\StockRepository.class
+entity\ItemEntity$Fields.class
+entity\StockEntity$Fields.class
+entity\StockEntity.class
