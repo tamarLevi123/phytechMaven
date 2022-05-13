@@ -12,6 +12,7 @@
         <module>application</module>
         <module>repository</module>
         <module>api</module>
+        <module>client.application</module>
     </modules>
 
     <properties>

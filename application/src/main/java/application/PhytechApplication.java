@@ -11,14 +11,23 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.ApplicationPidFileWriter;
 import org.springframework.boot.info.BuildProperties;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
-@EnableJpaRepositories("repository")
-@ComponentScan(basePackages = "repository")
+import java.io.IOException;
+
+@SpringBootApplication(scanBasePackages = {"controller","db"})
+@EnableJpaRepositories({"*"})
 @EntityScan
-public class PhytechApplication extends SpringBootServletInitializer {
+@RestController
+@Configuration
+public class PhytechApplication {//extends SpringBootServletInitializer {
 
     @Autowired
     BuildProperties buildProperties;
@@ -27,9 +36,13 @@ public class PhytechApplication extends SpringBootServletInitializer {
         SpringApplicationBuilder appBuilder = new SpringApplicationBuilder(PhytechApplication.class);
         SpringApplication application = appBuilder.application();
         application.setAdditionalProfiles("application");
-        application.addListeners(new ApplicationPidFileWriter("shutdown.pid"));
-        appBuilder.web(WebApplicationType.NONE).run(args);
-        System.out.println("fffffooooo!!!!");
+        appBuilder.run(args);
     }
+
+    @GetMapping("/user")
+    public String user() {
+        return "Fred";
+    }
+
 
 }

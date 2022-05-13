@@ -4,5 +4,6 @@ entity\ItemEntity.class
 repository\ItemRepository.class
 repository\StockRepository.class
 entity\ItemEntity$Fields.class
+db\Postgres2Dialect.class
 entity\StockEntity$Fields.class
 entity\StockEntity.class

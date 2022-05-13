@@ -1,3 +1,61 @@
+GET http://localhost:9080/store
+
+<> 2022-05-12T002316.404.json
+
+###
+
+GET http://localhost:9080/user
+
+<> 2022-05-12T001615.200.txt
+
+###
+
+GET http://localhost:9080/getItemsInStock
+
+<> 2022-05-12T001204.404.json
+
+###
+
+GET http://localhost:9080/getItemsInStock
+
+<> 2022-05-12T001113.404.json
+
+###
+
+GET http://localhost:9080/getItemsInStock
+
+<> 2022-05-12T000921.404.json
+
+###
+
+GET http://localhost:8080
+
+<> 2022-05-12T000921.200.html
+
+###
+
+GET http://localhost:9080
+
+<> 2022-05-12T000913.404.json
+
+###
+
+GET http://localhost:8080
+
+<> 2022-05-12T000913.200.html
+
+###
+
+GET http://localhost
+
+###
+
+GET http://localhost:8080
+
+<> 2022-05-12T000857.200.html
+
+###
+
 GET http://localhost:8080
 
 ###
