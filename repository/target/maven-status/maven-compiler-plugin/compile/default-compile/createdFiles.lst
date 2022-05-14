@@ -4,6 +4,7 @@ entity\ItemEntity.class
 repository\ItemRepository.class
 repository\StockRepository.class
 entity\ItemEntity$Fields.class
-db\Postgres2Dialect.class
+db\HibernateConfig.class
 entity\StockEntity$Fields.class
 entity\StockEntity.class
+db\HibernateConfig$1.class

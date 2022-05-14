@@ -20,18 +20,20 @@ spring:
   jpa:
     show-sql: true
     generate-ddl: false
-#    database-platform: DB2Platform
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: none
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
+    database: postgresql
 #        id:
 #          optimizer:
 #            pooled:
 ##              preferred: gov.btl.tevel.liba.core.jpa.BTLPooledLoOptimizer
-
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
 server:
   port: 9080
   tomcat:

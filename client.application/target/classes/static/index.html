@@ -8,16 +8,16 @@
 <body>
     <script>
         function loadItemsToTable() {
-            var body = document.getElementsByTagName('body')[0];
-            var tbl = document.createElement('table');
+            let body = document.getElementsByTagName('body')[0];
+            let tbl = document.createElement('table');
             tbl.style.width = '100%';
             tbl.setAttribute('border', '1');
-            var thead= document.createElement('thead');
-            var tr = createLine("id","description","price");
+            let thead= document.createElement('thead');
+            let tr = createLine("id","description","price");
             thead.appendChild(tr);
             tbl.appendChild(thead);
-            var tbdy = document.createElement('tbody');
-            fetch("https://phytech.com/getItems", {
+            let tbdy = document.createElement('tbody');
+            fetch("http://localhost:9080/getItems", {
                 "referrerPolicy": "strict-origin-when-cross-origin",
                 "body": null,
                 "method": "GET",
@@ -26,7 +26,7 @@
             }).then((response) => {
                 response.json()
                     .then((data) => {
-                        var tr = createLine(data.id,data.description,data.price);
+                        let tr = createLine(data.id,data.description,data.price);
                         tbdy.appendChild(tr);
                     });
             });
@@ -34,23 +34,65 @@
             body.appendChild(tbl)
         }
         function createLine(_id,_desc,_price){
-            var tr = document.createElement('tr');
+            let tr = document.createElement('tr');
             //id
-            var id = document.createElement('td');
+            let id = document.createElement('td');
             id.appendChild(document.createTextNode(_id));
             id.setAttribute('rowSpan', '2');
             tr.appendChild(id);
             //desc
-            var desc = document.createElement('td');
+            let desc = document.createElement('td');
             desc.appendChild(document.createTextNode(_desc));
             desc.setAttribute('rowSpan', '2');
             tr.appendChild(desc);
             //price
-            var price = document.createElement('td');
+            let price = document.createElement('td');
             price.appendChild(document.createTextNode(_price));
             price.setAttribute('rowSpan', '2');
             tr.appendChild(price);
+            //price
+            let buy = document.createElement('td');
+            buy.appendChild(this.createButtonBuy(_id));
+            buy.setAttribute('rowSpan', '2');
+            tr.appendChild(buy);
+
+            let amount = document.createElement('td');
+            amount.appendChild(this.createButtonAmount(_id));
+            amount.setAttribute('rowSpan', '2');
+            tr.appendChild(amount);
             return tr;
+        }
+        function createButtonBuy(_id){
+            let buy=document.createElement("BUTTON");
+            buy.innerText="buy";
+            buy.id=_id;
+            // buy.onclick(this.buy());
+            return buy;
+        }
+        function buy(){
+            // fetch("http://localhost:9080/sellAnItem", {
+            //     "referrerPolicy": "strict-origin-when-cross-origin",
+            //     "body": "id:"+this.id,
+            //     "method": "POST",
+            //     "mode": "cors",
+            //     "credentials": "include"
+            // });
+        }
+        function createButtonAmount(_id){
+            let amount=document.createElement("BUTTON");
+            amount.innerText="buy";
+            amount.id=_id;
+            // amount.onclick(this.amount());
+            return amount;
+        }
+        function amount(){
+            // fetch("http://localhost:9080/getAmountOfItem", {
+            //     "referrerPolicy": "strict-origin-when-cross-origin",
+            //     "body": "id:"+this.id,
+            //     "method": "GET",
+            //     "mode": "cors",
+            //     "credentials": "include"
+            // });
         }
         loadItemsToTable();</script>
 </body>

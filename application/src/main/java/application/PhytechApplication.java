@@ -1,5 +1,7 @@
 package application;
 
+import entity.ItemEntity;
+import entity.StockEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
@@ -19,15 +21,17 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import repository.ItemRepository;
+import repository.StockRepository;
 
 import java.io.IOException;
 
 @SpringBootApplication(scanBasePackages = {"controller","db"})
-@EnableJpaRepositories({"*"})
-@EntityScan
+@EnableJpaRepositories(basePackageClasses = {ItemRepository.class, StockRepository.class})
+@EntityScan(basePackageClasses = {ItemEntity.class, StockEntity.class})
 @RestController
 @Configuration
-public class PhytechApplication {//extends SpringBootServletInitializer {
+public class PhytechApplication {//} extends SpringBootServletInitializer {
 
     @Autowired
     BuildProperties buildProperties;
