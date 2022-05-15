@@ -1,5 +1,5 @@
-C:\workspaces\phytechMaven\repository\src\main\java\repository\StockRepository.java
-C:\workspaces\phytechMaven\repository\src\main\java\repository\ItemRepository.java
-C:\workspaces\phytechMaven\repository\src\main\java\entity\ItemEntity.java
-C:\workspaces\phytechMaven\repository\src\main\java\entity\StockEntity.java
-C:\workspaces\phytechMaven\repository\src\main\java\db\HibernateConfig.java
+C:\workspaces\phytechMaven\repository\src\main\java\persistence\db\HibernateConfig.java
+C:\workspaces\phytechMaven\repository\src\main\java\persistence\entity\ItemEntity.java
+C:\workspaces\phytechMaven\repository\src\main\java\persistence\repository\StockRepository.java
+C:\workspaces\phytechMaven\repository\src\main\java\persistence\entity\StockEntity.java
+C:\workspaces\phytechMaven\repository\src\main\java\persistence\repository\ItemRepository.java

@@ -1,4 +1,4 @@
-package db;
+package persistence.db;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ public class HibernateConfig {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
 
         sessionFactory.setDataSource(restDataSource());
-        sessionFactory.setPackagesToScan(new String[] { "repository" });
+        sessionFactory.setPackagesToScan(new String[] {"persistence/repository"});
         sessionFactory.setHibernateProperties(hibernateProperties());
 
         return sessionFactory;

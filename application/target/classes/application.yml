@@ -5,14 +5,7 @@ spring:
     password: postgres
     username: postgres
     url: jdbc:postgresql://localhost:5432/postgres
-#    driver-class-name: org.postgresql.Driver
-
-  #    url: jdbc:postgresql:postgres://eefchjwymxlowj:793173c830b09253101eee32717272dfc2ddc75702e7c85884f09b882db4f98d@ec2-52-54-212-232.compute-1.amazonaws.com:5432/d83l1brh2pch1v?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
-#    driver-class-name: org.postgresql.Driver
-#    driverClassName: org.postgresql.Driver
-#    ssl:
-#      enabled: true
-#      key-store-type: org.postgresql.ssl.NonValidatingFactory
+#    url: jdbc:postgresql:postgres://eefchjwymxlowj:793173c830b09253101eee32717272dfc2ddc75702e7c85884f09b882db4f98d@ec2-52-54-212-232.compute-1.amazonaws.com:5432/d83l1brh2pch1v?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
   application:
     name: phytech
 #  main:
@@ -23,10 +16,14 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: none
+      #spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
     database: postgresql
 #        id:
 #          optimizer:

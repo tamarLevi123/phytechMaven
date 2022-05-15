@@ -1,34 +1,25 @@
 package application;
 
-import entity.ItemEntity;
-import entity.StockEntity;
+import controller.StoreController;
+import persistence.entity.ItemEntity;
+import persistence.entity.StockEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.WebApplicationType;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
-import org.springframework.boot.context.ApplicationPidFileWriter;
 import org.springframework.boot.info.BuildProperties;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import repository.ItemRepository;
-import repository.StockRepository;
+import persistence.repository.ItemRepository;
+import persistence.repository.StockRepository;
 
-import java.io.IOException;
-
-@SpringBootApplication(scanBasePackages = {"controller","db"})
+@SpringBootApplication(scanBasePackageClasses = {StoreController.class/*,ItemRepository.class, StockRepository.class*/})
 @EnableJpaRepositories(basePackageClasses = {ItemRepository.class, StockRepository.class})
-@EntityScan(basePackageClasses = {ItemEntity.class, StockEntity.class})
+@EntityScan(basePackageClasses = {ItemEntity.class, StockEntity.class}/*,basePackages = {"persistence/entity"}*/)
 @RestController
 @Configuration
 public class PhytechApplication {//} extends SpringBootServletInitializer {

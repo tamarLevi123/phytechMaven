@@ -1,12 +1,11 @@
-package repository;
+package persistence.repository;
 
-import entity.StockEntity;
+import persistence.entity.ItemEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 @Repository
-public interface StockRepository extends JpaRepository<StockEntity, Integer>, JpaSpecificationExecutor {
+public interface ItemRepository extends JpaRepository<ItemEntity,Integer>, JpaSpecificationExecutor {
 
 }

@@ -1,3 +1,163 @@
+GET http://localhost:9080/store/getItems
+
+<> 2022-05-15T232822.500.json
+
+###
+
+GET http://localhost:9080/store/getItems
+
+<> 2022-05-15T232607.500.json
+
+###
+
+GET http://localhost:9080/store/getAmountOfItem?id=1
+
+<> 2022-05-15T230732.500.json
+
+###
+
+GET http://localhost:9080/store/getItems
+
+<> 2022-05-15T230506.500.json
+
+###
+
+GET http://localhost:9080/store/getItems
+
+<> 2022-05-15T230425.500.json
+
+###
+
+GET http://localhost:9080/store/
+
+<> 2022-05-15T230406.404.json
+
+###
+
+GET http://localhost:9080/store
+
+<> 2022-05-15T215652.404.json
+
+###
+
+GET http://localhost:9080/store
+
+<> 2022-05-15T215650.404.json
+
+###
+
+GET http://localhost:9080/store/getItemsInStock
+
+<> 2022-05-15T215625.404.json
+
+###
+
+GET http://localhost:9080
+
+<> 2022-05-15T215204.404.json
+
+###
+
+GET http://localhost:9080
+
+<> 2022-05-15T215200.404.json
+
+###
+
+GET http://localhost:9080
+
+<> 2022-05-15T215149.404.json
+
+###
+
+GET http://localhost:9080
+
+<> 2022-05-15T215146.404.json
+
+###
+
+GET http://localhost:9080/actuator/health
+
+<> 2022-05-15T215124.200.json
+
+###
+
+GET http://localhost:9080/actuator
+
+<> 2022-05-15T215059.200.json
+
+###
+
+GET http://localhost:9080/store/getItemsInStock
+
+<> 2022-05-15T214903.404.json
+
+###
+
+GET http://localhost:9080/store
+
+<> 2022-05-15T214842.404.json
+
+###
+
+GET http://localhost:9080/store
+
+<> 2022-05-15T214444.404.json
+
+###
+
+GET http://localhost:9080/store/
+
+<> 2022-05-15T214436.404.json
+
+###
+
+GET http://localhost:9080/store/getItemsInStock
+
+<> 2022-05-15T214408.404.json
+
+###
+
+GET http://localhost:9080/store/getItemsInStock
+
+<> 2022-05-15T213605.404.json
+
+###
+
+GET https://localhost:9080/store/getItemsInStock
+
+###
+
+GET http://localhost:9080/getItemsInStock
+
+<> 2022-05-15T212708.404.json
+
+###
+
+GET http://localhost:9080/getItemsInStock
+
+<> 2022-05-15T212628.404.json
+
+###
+
+GET http://localhost:9080/store/getItemsInStock
+
+<> 2022-05-15T212518.404.json
+
+###
+
+GET http://localhost:9080/getItemsInStock
+
+<> 2022-05-15T212428.404.json
+
+###
+
+GET http://localhost:9080/store
+
+<> 2022-05-15T212421.404.json
+
+###
+
 GET http://localhost:9080/store
 
 <> 2022-05-12T002316.404.json

@@ -1,4 +1,4 @@
-package entity;
+package persistence.entity;
 
 import lombok.*;
 import javax.persistence.*;

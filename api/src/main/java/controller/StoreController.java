@@ -1,19 +1,18 @@
 package controller;
 
-import entity.ItemEntity;
-import entity.StockEntity;
+import org.springframework.web.bind.annotation.*;
+import persistence.entity.ItemEntity;
+import persistence.entity.StockEntity;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
-import repository.ItemRepository;
-import repository.StockRepository;
+import persistence.repository.ItemRepository;
+import persistence.repository.StockRepository;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@RestController("/store")
+@RestController
+@RequestMapping("/store")
 public class StoreController {
 
     private static final String GET_ITEMS_IN_STOCK = "/getItemsInStock";
@@ -26,7 +25,7 @@ public class StoreController {
     @Autowired
     private StockRepository stockRepository;
 
-    @GetMapping(name = GET_ITEMS_IN_STOCK)
+    @GetMapping(value = GET_ITEMS_IN_STOCK)
     public List<ItemEntity> getItemsInStock() {
         List<Integer> itemIdsInStock = stockRepository.findAll().stream()
                 .filter(stock -> stock.getAmount() > 0)
@@ -34,18 +33,18 @@ public class StoreController {
                 .collect(Collectors.toList());
         return itemRepository.findAllById(itemIdsInStock);
     }
-    @GetMapping(name = GET_ITEMS)
+    @GetMapping(value = GET_ITEMS)
     public List<ItemEntity> getItems() {
         return itemRepository.findAll();
     }
-    @GetMapping(name = AMOUNT_OF_ITEM)
-    public Integer getAmountOfItem(Integer id) {
+    @GetMapping(value = AMOUNT_OF_ITEM)
+    public Integer getAmountOfItem(@RequestParam(name="id") Integer id) {
         Optional<StockEntity> stockById = stockRepository.findById(id);
         return stockById.isPresent() ? stockById.get().getAmount() : 0;
     }
 
-    @PostMapping(name = SELL_AN_ITEM)
-    public void sellAnItem(Integer id) {
+    @PostMapping(value = SELL_AN_ITEM)
+    public void sellAnItem(@RequestParam(name="id")Integer id) {
         StockEntity stockById = stockRepository.getById(id);
         stockById.setAmount(stockById.getAmount() - 1);
         stockRepository.save(stockById);

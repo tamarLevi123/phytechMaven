@@ -17,7 +17,7 @@
             thead.appendChild(tr);
             tbl.appendChild(thead);
             let tbdy = document.createElement('tbody');
-            fetch("http://localhost:9080/getItems", {
+            fetch("http://localhost:9080/store/getItems", {
                 "referrerPolicy": "strict-origin-when-cross-origin",
                 "body": null,
                 "method": "GET",
@@ -70,7 +70,7 @@
             return buy;
         }
         function buy(){
-            // fetch("http://localhost:9080/sellAnItem", {
+            // fetch("http://localhost:9080/store/sellAnItem", {
             //     "referrerPolicy": "strict-origin-when-cross-origin",
             //     "body": "id:"+this.id,
             //     "method": "POST",
@@ -80,13 +80,13 @@
         }
         function createButtonAmount(_id){
             let amount=document.createElement("BUTTON");
-            amount.innerText="buy";
+            amount.innerText="amount";
             amount.id=_id;
             // amount.onclick(this.amount());
             return amount;
         }
         function amount(){
-            // fetch("http://localhost:9080/getAmountOfItem", {
+            // fetch("http://localhost:9080/store/getAmountOfItem", {
             //     "referrerPolicy": "strict-origin-when-cross-origin",
             //     "body": "id:"+this.id,
             //     "method": "GET",

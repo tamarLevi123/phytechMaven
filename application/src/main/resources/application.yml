@@ -16,10 +16,14 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: none
+      #spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
     database: postgresql
 #        id:
 #          optimizer:
