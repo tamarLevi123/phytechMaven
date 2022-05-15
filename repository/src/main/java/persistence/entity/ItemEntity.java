@@ -16,7 +16,7 @@ public class ItemEntity {
     @Column(name = "DESCRIPTION")
     private String description;
     @Column(name = "PRICE")
-    private Integer price;
+    private Double price;
 
 
     public class Fields {

@@ -4,44 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb221df-ecd5-4d5b-b6b1-5dc7350b3550" name="Changes" comment="dialect">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_6_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/test/java/ItemRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2fb221df-ecd5-4d5b-b6b1-5dc7350b3550" name="Changes" comment="its working">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_5_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/controller/StoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/application/application.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/application/PhytechApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/application/PhytechApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/application/PhytechApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/application/PhytechApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.application/application (1).iml" beforeDir="false" afterPath="$PROJECT_DIR$/client.application/application (1).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client.application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client.application/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client.application/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.application/target/classes/app/PhytechOnlineApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/client.application/target/classes/app/PhytechOnlineApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client.application/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client.application/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/db/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/persistence/db/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/entity/ItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/persistence/entity/ItemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/entity/StockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/persistence/entity/StockEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/persistence/repository/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/repository/StockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/persistence/repository/StockRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/classes/entity/ItemEntity$Fields.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/classes/entity/ItemEntity$ItemEntityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/classes/entity/ItemEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/classes/entity/StockEntity$Fields.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/classes/entity/StockEntity$StockEntityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/classes/entity/StockEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/classes/repository/ItemRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/classes/repository/StockRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/target/repository-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repository/target/repository-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/repository.iml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/repository.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/persistence/entity/ItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/persistence/entity/ItemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/test/java/ItemRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/test/java/ItemRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/target/repository-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,22 +112,25 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #3">
+  <component name="RunManager" selected="JUnit.ItemRepositoryTest">
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
-      <method v="2" />
+    <configuration name="ItemRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="repository" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ItemRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="PhytechApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="application (1)" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="application.PhytechApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="ItemRepositoryTest.injectedRepositoryNotNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="repository" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ItemRepositoryTest" />
+      <option name="METHOD_NAME" value="injectedRepositoryNotNull" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,19 +159,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.generated-requests | #4" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
-      <item itemvalue="Spring Boot.PhytechApplication (1)" />
+      <item itemvalue="JUnit.ItemRepositoryTest" />
+      <item itemvalue="JUnit.ItemRepositoryTest.injectedRepositoryNotNull" />
       <item itemvalue="Spring Boot.PhytechOnlineApplication" />
       <item itemvalue="Spring Boot.PhytechApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemRepositoryTest" />
+        <item itemvalue="JUnit.ItemRepositoryTest.injectedRepositoryNotNull" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="Spring Boot.PhytechApplication" />
         <item itemvalue="Spring Boot.PhytechOnlineApplication" />
-        <item itemvalue="HTTP Request.generated-requests | #4" />
-        <item itemvalue="Spring Boot.PhytechApplication (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +192,7 @@
       <workItem from="1651584839508" duration="1671000" />
       <workItem from="1651599659480" duration="3785000" />
       <workItem from="1652207101336" duration="12718000" />
-      <workItem from="1652378174595" duration="28592000" />
+      <workItem from="1652378174595" duration="29882000" />
     </task>
     <task id="LOCAL‎00001" summary="backend application">
       <created>1651600290959</created>
@@ -245,7 +224,13 @@
       <option name="presentableId" value="LOCAL‎00005" />
       <updated>1652563255909</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎00006" summary="its working">
+      <created>1652646809923</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1652646809923</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +250,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="backend application" />
     <MESSAGE value="dialect" />
-    <option name="LAST_COMMIT_MESSAGE" value="dialect" />
+    <MESSAGE value="its working" />
+    <option name="LAST_COMMIT_MESSAGE" value="its working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

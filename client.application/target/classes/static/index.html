@@ -66,33 +66,33 @@
             let buy=document.createElement("BUTTON");
             buy.innerText="buy";
             buy.id=_id;
-            // buy.onclick(this.buy());
+            buy.onclick(this.buy());
             return buy;
         }
         function buy(){
-            // fetch("http://localhost:9080/store/sellAnItem", {
-            //     "referrerPolicy": "strict-origin-when-cross-origin",
-            //     "body": "id:"+this.id,
-            //     "method": "POST",
-            //     "mode": "cors",
-            //     "credentials": "include"
-            // });
+            fetch("http://localhost:9080/store/sellAnItem", {
+                "referrerPolicy": "strict-origin-when-cross-origin",
+                "body": "id:"+this.id,
+                "method": "POST",
+                "mode": "cors",
+                "credentials": "include"
+            });
         }
         function createButtonAmount(_id){
             let amount=document.createElement("BUTTON");
             amount.innerText="amount";
             amount.id=_id;
-            // amount.onclick(this.amount());
+            amount.onclick(this.amount());
             return amount;
         }
         function amount(){
-            // fetch("http://localhost:9080/store/getAmountOfItem", {
-            //     "referrerPolicy": "strict-origin-when-cross-origin",
-            //     "body": "id:"+this.id,
-            //     "method": "GET",
-            //     "mode": "cors",
-            //     "credentials": "include"
-            // });
+            fetch("http://localhost:9080/store/getAmountOfItem", {
+                "referrerPolicy": "strict-origin-when-cross-origin",
+                "body": "id:"+this.id,
+                "method": "GET",
+                "mode": "cors",
+                "credentials": "include"
+            });
         }
         loadItemsToTable();</script>
 </body>
